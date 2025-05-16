@@ -7,6 +7,7 @@ const controller = new CategoryController();
 router
     .post('/', controller.createCategory)
     .get('/', controller.getAllCategories)
+    .get('/:id', controller.getCategoryById)
     .patch('/:id', controller.updateCategoryById)
     .delete('/:id', controller.deleteCategoryById)
 
